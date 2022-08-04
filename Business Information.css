@@ -341,6 +341,12 @@ input[type="url"]{
    .menu{
     font-size: 18px;
    }
+   .menunav{
+    font-size: 15px;
+   }
+   .menunav img{
+    width: 15%;
+   }
    .workbody{
     width: 85%;
    }

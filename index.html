@@ -14,7 +14,6 @@
 
 <body>
     <div class="container">
-        <!-- why why -->
         <div class="nav">
             <img src="./Wireframe TermsGen/Primary 1.svg" alt="logo" class="logo">
             <div class="nav1">
@@ -614,12 +613,14 @@
         const list1 = document.querySelector(".disable2");
         const list2 = document.querySelector(".disable3");
         const list3 = document.querySelector(".disable4");
-
+        const ilist6 = document.querySelector(".previewpage")
+        
        const showdiv = document.querySelector("#website");
        const showdiv1 = document.querySelector("#phone");
        const showdiv2 = document.querySelector("#entity");
        const showdiv3 = document.querySelector("#company");
-
+       const howdiv6 = document.querySelector(".close")
+       
         function hidediv(name, divi){
        name.addEventListener("change", function(e){
         if (name.checked){
@@ -634,6 +635,13 @@
     hidediv(showdiv1, list1)
     hidediv(showdiv2, list2)
     hidediv(showdiv3, list3)
+
+    howdiv5.onclick = function() {
+        ilist6.style.display = "block";
+    };
+    howdiv6.onclick = function() {
+        ilist6.style.display = "none";
+    }
     </script>
     
 </body>
