@@ -354,7 +354,18 @@ input[type="url"]{
     width: 15%;
     font-size: 12px;
    }
+   
    .logo{
     margin-bottom: 18px;
+    width: 96%;
+    margin-left: 1%;
+   }
+   .preview{
+    padding: 5px;
+    min-width: 20%;
+    font-size: 13px;
+   }
+   button{
+    font-size: 10px;
    }
 }
