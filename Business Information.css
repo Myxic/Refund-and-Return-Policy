@@ -351,6 +351,9 @@ input[type="url"]{
     /* float: right; */
     
 }
+#burger{
+        display: block;
+}
 
 @media (max-width:700px){
 
