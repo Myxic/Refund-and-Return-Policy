@@ -100,7 +100,7 @@ body{
     z-index: -1;
   
 }
-h3{ 
+.pagenum h3{ 
     width: 25px ;
     height: 25px;
     border: 2px solid #151515;
@@ -135,16 +135,23 @@ h3{
 }
 
 .document{
-    width: 40%;
-    height: 500px;
+    width: 70%;
+    /* height: 500px; */
     background-color: #0055CC;
-    margin: 30px auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     overflow: auto;
     cursor:pointer;
     border: 2px solid rgba(68, 60, 60,0.5)
 }
+.document_page{
+    background-color: white;
+}
+
 .language{
     /* background: red; */
+    text-align: center;
     height: 300px;
     position: relative;
     width: max-content;
@@ -166,6 +173,7 @@ h3{
     border-radius: 0px 0px 10px 10px;
 
 }
+
 
 /* padding: 20px 20px 0px 20px; */
 .exportoverlay{
@@ -220,4 +228,18 @@ select{
     border-radius: 8px;
     padding: 10px 25px;
 }
+
+.back{
+    
+    /* width: 20%; */
+    background: #0e54b8;
+    margin: auto;
+    color: #F9F6EE;
+    border-radius: 8px;
+    margin-top: 50px;
+    padding: 5px 35px;
+    text-align: center;
+}
+
+
  

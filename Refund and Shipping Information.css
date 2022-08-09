@@ -20,20 +20,29 @@ body{
     width: 12%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 1%;
     position: fixed;
-    min-height: 100vh;
+    height: 100vh;
     color: #D9D9D9;
     text-align: center;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     background: #00337B;
+    /* border:1px solid blue; */
+    box-shadow: 3px 3px 3px 3px;
+    top: 70px;
+    z-index: 1;
 }
-.logo{
-    margin: 10px;
-    margin-bottom: 40px;
+.logoxx{
+    width: 20%;
+    /* border: 1px solid red; */
+}
+.logoxx img{
+    width: 40%;
+    margin-left: 35%;
+    
 }
 .line {
     height: 50px;
@@ -73,7 +82,7 @@ body{
     }
 }
 .workbody{
-    width: 88%;
+    width: 100%;
     position: absolute;
     /* background: #00337B; */
     top: 0%;
@@ -82,29 +91,40 @@ body{
     
     /* background: blueviolet;   */
 }
+.nav1{
+    margin-top: 60px ;
+    }
 .box{
     padding: 20px;
     
 }
 .menu{
+    width: 100%;
     min-height: 57px;
-    background: rgba(204, 224, 253, 0.3);
+    /* border: 2px solid red; */
+    background: #F9FBFF;;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 24px;
     line-height: 100%;
-    position: relative;
+    position: fixed;
+    z-index: 2;
+    display: flex;
 }
 .menu .menunav{
-    /* min-width:60% ; */
-    margin: auto;
+    width: 80%;
     margin-left:  25px;
     display:flex;
+    top: 50%;
+    
+    float:right;
     list-style: none;
     gap: 6%;
+    /* border: 1px solid red; */
+
 }
 .menunav li :hover{
     background-color: rgba(25, 104, 221, 1);
@@ -114,6 +134,13 @@ body{
 a{
     color: black;
     text-decoration: none;
+}
+.details{
+    position: relative;
+    width: 88%;
+    float: right;
+    margin-top: 83px;
+  
 }
 .menunav .dropdown:hover{
     padding: 0%;
@@ -136,7 +163,7 @@ a{
     display: block;
 }
 .dropdw > li:hover{
-    background:   rgba(25, 104, 221);
+    background:   rgb(25, 104, 221);
     color: gray;
 }
 
@@ -293,8 +320,14 @@ p{
     /* float: right; */
     
 }
+.top{
+    width: 100%;
+    padding-top: 20px;
+    height: 90px;
+    background: #ECF0F3;
+}
 
-@media (max-width:600px){
+@media (max-width:700px){
 
     body{
         width: 100%;
@@ -310,12 +343,12 @@ p{
         padding: 0%;
     }
     h1{
-        font-size: xx-large;
+        font-size: larger;
         width: 70%;
     }
     h4{
         
-        font-size: larger;
+        font-size: large;
     }
    .menunav{
     font-size: 12px;
@@ -324,21 +357,34 @@ p{
     width: 10%;
    }
    .workbody{
-    width: 84%;
+    width: 100%;
     
+   }
+   .top{
+    width: 100%;
+   }
+   .logoxx img{
+    margin-top :9px;
+    width: 60%;
    }
    .nav{
     width: 16%;
     font-size: 12px;
    }
-   .logo{
+   /* .logo{
     margin-bottom: 18px;
     width: 96%;
     margin-left: 0;
-   }
+   } */
    .preview{
     padding: 0;
     min-width: 20%;
+   }
+   .previewpage{
+    padding: 0;
+    width: 86%;
+    margin: auto;
+    padding: 10px;
    }
    button{
     font-size: 10px;
@@ -346,4 +392,69 @@ p{
    button img{
     width: 70%
    }
+}
+@media (max-width:375px) {
+    body{
+        width: 100%;
+    }
+    .nav{
+    width:100%;
+    z-index: 1;
+    display: block;
+    height: 120px;
+    
+}
+.nav1{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+.menunav{
+    font-size: 10px;
+    
+}
+.line{
+    width: 70%;
+    height: 0;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 15px;
+    position: absolute;
+    z-index: -1;
+}
+.page1,
+.page3,
+.page4{
+    background-color: #00337B;
+    
+}
+.details{
+    float: none;
+    top: 195px;
+    width: 100%;
+    margin: auto;
+    font-size: 12px;  
+}
+.top h1{
+    font-size: 20px;
+    
+}
+.top{
+    background: none;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    font-size: 15px;
+}
+.platform-title,
+.producttype-title,
+.refund-title,
+.discount-title,
+.invalid-title,
+.shipping-title{
+    font-size: 16px;
+}
 }
