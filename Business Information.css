@@ -17,7 +17,7 @@ body{
     position: relative;
 }
 .nav{
-    width: 12%;
+    width: 8%;
     display: flex;
     flex-direction: column;
     gap: 1%;
@@ -50,7 +50,7 @@ body{
     width: 0%;
     margin: 5px auto;
     background: #D9D9D9;
-    border: 0.06cm solid  #D9D9D9;
+    border: 0.03cm solid  #D9D9D9;
 }
 
          .page1,
@@ -63,7 +63,7 @@ body{
     text-align: center;
     margin: auto;
      line-height: 25px;
-    border: 3px solid#D9D9D9;
+    border: 1px solid #D9D9D9;
     border-radius: 50%;
 
 }
@@ -124,12 +124,12 @@ margin-top: 60px ;
 
 }
 .menunav li :hover{
-    background-color: rgba(25, 104, 221, 0.6);
-    color: gray;
+    background-color: rgba(25, 104, 221, 1);
+    color: white;
     padding: 5px;
 }
 a{
-    color: black;
+   color: #00337B;
     text-decoration: none;
 }
 .menunav .dropdown:hover{
@@ -187,7 +187,7 @@ nav{
     /* justify-content: space-between; */
     width: 96%;
     margin: auto;
-    border: 2px solid rgba(25, 104, 221, 0.9);
+    border: 1px solid #001431;
     
     border-radius: 20px;
     padding: 10px;
@@ -204,10 +204,10 @@ nav label{
 }
 #country{
     width: 100%;
-    border: 2px solid rgba(25, 104, 221, 0.9);
+    border: 1px solid #001431;
     padding: 10px;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 400;
 }
 #date{
     width: 90%;
@@ -216,7 +216,7 @@ nav label{
     padding: 10px;
     background: rgba(92, 80, 80, 0.2);
     border-radius: 10px;
-    border: 2px solid rgba(25, 104, 221, 0.9);
+    border: 1px solid #001431;
     margin-bottom: 30px;
 }
 small{
@@ -273,9 +273,9 @@ h4{
 }
 .detailbody{
     position: relative;
-    width: 88%;
+    width: 92%;
     float: right;
-    margin-top: 83px;
+    margin-top: 76px;
 }
 .down{
     width: 50%;
@@ -298,20 +298,24 @@ p{
 .disable4{
     display: none;
     margin-top: 5px;
-    border: 2px solid rgba(25, 104, 221, 0.6);
+    /* border: 1px solid gray; */
     padding: 10px;
     border-radius: 10px ;
     font-family: 'Poppins';
     font-style: normal;
     /* text-align: center; */
+    font-weight: 300;
     z-index: 1;
 
 }
+
 input[type="text"],
 input[type="url"]{
-    border: 2px solid gray;
-    border-radius: 3px;
+    border: 1px solid gray;
+    border-radius: 4px;
     cursor: auto;
+    width: 94%;
+    padding: 5px;
 }
 .previewpage{
     position: absolute;
@@ -411,7 +415,7 @@ input[type="url"]{
    }
 }
 
-@media (max-width:375px){
+@media (max-width:400px){
     body{
         width:100%
     }
@@ -430,6 +434,10 @@ input[type="url"]{
         padding: 10px;
         
         
+    }
+    .menu .menunav {
+        font-size: 10px;
+        display: none;  
     }
     .line{
         width: 70%;
@@ -462,5 +470,11 @@ input[type="url"]{
     }
     h5{
         font-size: 15px;
+    }
+    #burger{
+        display: block;
+        right: 10px;
+        position: absolute;
+        z-index: 4;
     }
 }    

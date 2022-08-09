@@ -1,3 +1,19 @@
+const icon = document.getElementById("burger")
+const menu = document.querySelector(".menunav")
+icon.onclick= function() {
+    if (menu.style.display == "none") {
+        menu.style.display = "flex";
+    } else{
+        menu.style.display = "none";
+    }
+
+};
+
+
+
+
+
+
 
 const App_name1 = document.querySelectorAll(".appName");
 const App_name = Array.from(App_name1)

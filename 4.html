@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="shortcut icon" type="image/png" href="./Wireframe TermsGen/FavIcon secondary.svg">
     <link rel="stylesheet" href="./4.css">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     
 </head>
 
@@ -16,16 +17,17 @@
             <figure class="logo"><img src="./Wireframe TermsGen/Primary 1.svg" alt="logo"></figure>
             <ul class="menunav">
                 <li><a href="#">Home</a></li>
-                <li class="drop"><a href="#">Generate <img src="./Wireframe TermsGen/Vector.svg" alt="icon" class="dropdown"></a>
-                <ul class="dropdw">
+                <li class="drop"><a href="#">Generate </a></li>
+                <!-- <ul class="dropdw">
                     <li><a href="#">Privacy policy</a></li>
                     <li><a href="#">Disclaimer</a></li>
                     <li><a href="#">Return and refund policy</a></li>
                     <li><a href="#">Terms and conditions</a></li> 
-                </ul></li>
+                </ul></li> -->
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Contant Us</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
+            <figure id="burger"><img src="./Wireframe TermsGen/Frame 6379.svg" alt=""></figure>
         </nav>
         <div class="pagename">
             <h1>Preview your document</h1>
@@ -39,12 +41,12 @@
             <div class="page ii"><h3>2</h3><small>Refund and Shipping</small></div>
             <div class="page iii"><h3>3</h3><small>Additional Information</small></div>
             <div class="page iv"><h3>4</h3><small>Preview Document</small></div>
-            <div class="page v"><h3>5</h3><small>Preview Document</small></div>
+           
             <div class="line"></div>
         </div>
         <div class="document">
             <!-- javascript for the document -->
-            <div class="document_page">
+            <div class="document_page" id="docPage">
                 <h1>Return and Refund Policy</h1>
                 <p>Updated at <span class="update"> </span></p>
                 <br>
@@ -88,7 +90,7 @@
 
                     
                  </ul>
-                </div>
+               
                 <h2>Refunds</h2>
                 <p>We at <span class="appName"> </span> commit ourselves to
                     serving our customers with the best
@@ -238,7 +240,7 @@
                         <div class="overcontext">
                             <h4>Choose the format you wish to export your file:</h4>
                             <div class="fileformat">
-                                <button type="button" onclick="pdf()" id="pdff"><img src="./Wireframe TermsGen/Embed.svg" alt="pdf"  ></button>
+                                <img src="./Wireframe TermsGen/Embed.svg" alt="pdf"  id="pdfff" onclick="PDFgen()">
                                 <img src="./Wireframe TermsGen/Embed-1.svg" alt="txt">
                                 <img src="./Wireframe TermsGen/Embed-2.svg" alt="docx">
                             </div>
@@ -272,13 +274,19 @@
         myappend("product1004",getCookie("e"));
         </script>
     <script>
-        function pdf(){
-        let document21 = document.getElementsByClassName("document_page")
-        document21.focus
-        document21.print
+        const pdfbut = document.querySelector("#pdfff")
+
+        
+
+
+        function PDFgen() {
+            const element = document.getElementById("docPage");
+            
+            html2pdf()
+            .from(element)
+            .save();
         }
-
-
+       
 
     </script>
     
