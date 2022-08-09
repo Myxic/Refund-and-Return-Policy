@@ -491,6 +491,7 @@ h5{
 .shipping-title{
     font-size: 15px;
 }
+
 #burger{
     display: block;
     right: 10px;
@@ -498,3 +499,4 @@ h5{
     z-index: 4;
 }
 }
+
