@@ -30,7 +30,7 @@ body{
     font-style: normal;
     font-weight: 500;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     
 }
 .menu a{
@@ -83,10 +83,11 @@ body{
 }
 .pagename{
     /* border: 2px solid #969696; */
-    margin-top: 100px;
+    margin-top: 90px;
     padding-top: 37px;
     padding-bottom: 40px;
     background: #ECF0F3;
+    z-index: -1;
 }
 .pagenum{
     display: flex;
@@ -167,23 +168,30 @@ body{
 }
 
 .language{
-    width: 90%;
+    max-width: 50%;
     /* background: red; */
     text-align: center;
     height: 300px;
     position: relative;
-    width: max-content;
+    /* width: max-content; */
     margin: auto;
 }
 .fileformat,
 .options{
     display: flex;
     justify-content: space-evenly;
+
+}
+
+.options{
+    margin-top: 30px;
+   
 }
 .overtop{
     background: #0055CC;
     height: 30%;
     border-radius: 10px 10px 0px 0px;
+    position: relative;
 }
 .overdown{
     background:#F9F6EE;
@@ -193,7 +201,7 @@ body{
 }
 
 
-/* padding: 20px 20px 0px 20px; */
+
 .exportoverlay{
     border: 2px solid rgba(68, 60, 60,0.5);
     border-radius: 10px;
@@ -206,28 +214,27 @@ body{
     height: 240px;
     z-index: 1;
 }
-.export:hover .exportoverlay{
-    display: block;
-   
+.export .fileformat img {
+    width: 60px;
+  
 }
 
- .export .fileformat img {
-    width: 80px;
-    height: 60px;
+.export .overtop img{
+    position: absolute;
+    margin-left: 39.6%;
+    margin-top:30px;
+
+    
     
 }
-.export .overtop img{
-    width: 120px;
-    height: 80px;
-    position: absolute;
-    top:30px;
-    left: 30%;
-    margin: auto;
-}
+
 .options div img{
+    display: flex;
     width: 100px;
-    height: 60px;
+    /* border: 1px solid red; */
+    
 }
+
 h4{
   
     width: 70%;
@@ -241,26 +248,41 @@ h4{
     /* background: #00337B; */
 }
 select{
-    color: #2B80F7;
-    border:1px solid #2B80F7;
+    color: black;
+    border:1px solid #5F5F5F;
     border-radius: 8px;
     padding: 10px 25px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    
 }
 
 .back{
     
-    /* width: 20%; */
+    width: 40%;
     background: #0e54b8;
     margin: auto;
     color: #F9F6EE;
     border-radius: 8px;
     margin-top: 50px;
-    padding: 5px 35px;
+    padding: 10px 35px;
     text-align: center;
+    margin-bottom: 200px;
 }
+.export:hover .exportoverlay{
+    display: block;
+   
+}
+
 #burger{
     display: none;
 }
+
+#downloadbtn{
+    width: 120px;
+}
+
 @media (max-width:700px) {
     body{
         width: 100%;
@@ -273,9 +295,20 @@ select{
     }
     .language{
         font-size: 12px;
+        max-width: 75%;
         /* border: 1px solid red; */
     }
-    
+    .options div img{
+        display: flex;
+        width: 85px;  
+    }
+    .export .fileformat img {
+        width: 50px;
+      
+    }
+    #downloadbtn{
+        width: 100px;
+    }
 }
 
     @media (max-width:400px) {
@@ -322,7 +355,34 @@ select{
         color: #00337B;border: 1px solid  #0055CC;
         box-shadow: 0px 0px 4px 2px #F9F6EE;
     }
-    
+    .pagename{
+        margin-top: 70px;
+    }
+    .pagename h1{
+        font-size: 20px;
+    }
+    .options div img{
+        display: flex;
+        width: 63px;  
+    }
+    .export .fileformat img {
+        width: 50px;
+      
+    }
+    #downloadbtn{
+        width: 70px;
+    }
+    .language{
+        max-width: 86%;
+    }
+    select{
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+        max-width: 30%;
+        text-align: center;
+    }
 }
 
 

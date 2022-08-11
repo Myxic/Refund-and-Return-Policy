@@ -352,7 +352,7 @@ input[type="url"]{
     
 }
 #burger{
-        display: none;
+    display: none;
 }
 
 @media (max-width:700px){

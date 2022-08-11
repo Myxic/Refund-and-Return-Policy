@@ -1,4 +1,5 @@
 const icon = document.getElementById("burger")
+// const page5 = document.querySelector(".")
 const menu = document.querySelector(".menunav")
 icon.onclick= function() {
     if (menu.style.display == "none") {

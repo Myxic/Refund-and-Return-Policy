@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="./Wireframe TermsGen/FavIcon secondary.svg">
     <link rel="stylesheet" href="./4.css">
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
     
 </head>
 
@@ -24,8 +25,8 @@
                     <li><a href="#">Return and refund policy</a></li>
                     <li><a href="#">Terms and conditions</a></li> 
                 </ul></li> -->
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="./About us Page/about.html">About Us</a></li>
+                <li><a href="./Contact us Page/contact.html">Contant Us</a></li>
             </ul>
             <figure id="burger"><img src="./Wireframe TermsGen/Frame 6379.svg" alt=""></figure>
         </nav>
@@ -228,26 +229,34 @@
             <br>
             <br>
             <select id="language" name="language">
+                <option>Select your preferred language</option>
                 <option value="ENG">English</option>
                 <option value="Fre">French</option>
                 <option value="Spa">Spanish</option>
             </select>
             <div class="options">
-                <div><img src="./Wireframe TermsGen/Secondary Button.svg" alt="share"></div>
-                <div class="export"> <div class="exportoverlay">
-                    <div class="overtop"><img src="./Wireframe TermsGen/Frame 6366.svg" alt="emailsent" srcset=""></div>
-                    <div class="overdown">
-                        <div class="overcontext">
-                            <h4>Choose the format you wish to export your file:</h4>
-                            <div class="fileformat">
-                                <img src="./Wireframe TermsGen/Embed.svg" alt="pdf"  id="pdfff" onclick="PDFgen()">
-                                <img src="./Wireframe TermsGen/Embed-1.svg" alt="txt">
-                                <img src="./Wireframe TermsGen/Embed-2.svg" alt="docx">
-                            </div>
+                <div class="export">
+                    <div class="exportoverlay">
+                        <div class="overtop">
+                            <img src="./Wireframe TermsGen/Frame 6366.svg" alt="emailsent" >
                         </div>
+                            <div class="overdown">
+                                <div class="overcontext">
+                                        <h4>Choose the format you wish to export your file:</h4>
+                                    <div class="fileformat">
+                                        <img src="./Wireframe TermsGen/Embed.svg" alt="pdf"  id="pdfff" onclick="PDFgen()">
+                                        <img src="./Wireframe TermsGen/Embed-1.svg" alt="txt">
+                                        <img src="./Wireframe TermsGen/Embed-2.svg" alt="docx" onclick="Export2Word('document','word-content')">
+                                        <img src="./Wireframe TermsGen/Embed html.svg" alt="HTML" onclick="window.print()">
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                </div><img src="./Wireframe TermsGen/Secondary Button-1.svg" alt="share"></div>
-                <div><img src="./Wireframe TermsGen/Secondary Button-2.svg" alt="share"></div>
+                <img src="./Wireframe TermsGen/Export44.svg" alt="export" ></div>
+                
+                <div><img src="./Wireframe TermsGen/Export-144.svg" alt="share"></div>
+                <div><img src="./Wireframe TermsGen/Embed44.svg" alt="embed"></div>
+                <div id="download2"><img src="./Wireframe TermsGen/Download44.svg" alt="download" id="downloadbtn" ></div>
                 
             </div>
             <form action="./Additional Information.html">
@@ -274,6 +283,7 @@
         myappend("product1004",getCookie("e"));
         </script>
     <script>
+
         const pdfbut = document.querySelector("#pdfff")
 
         
@@ -287,7 +297,9 @@
             .save();
         }
        
-
+        function Export2Word(element, filename = ''){
+   
+}
     </script>
     
 

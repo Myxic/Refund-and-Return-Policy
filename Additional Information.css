@@ -352,6 +352,9 @@ p{
  border: 1px solid black;
  border-radius: 5px;
 }
+#burger{
+    display: none;
+}
 
 
 @media (max-width:700px){
@@ -491,7 +494,6 @@ h5{
 .shipping-title{
     font-size: 15px;
 }
-
 #burger{
     display: block;
     right: 10px;
@@ -499,4 +501,3 @@ h5{
     z-index: 4;
 }
 }
-
